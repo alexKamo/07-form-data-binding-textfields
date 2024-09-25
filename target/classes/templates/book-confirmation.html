@@ -6,12 +6,15 @@
 </head>
 <body>
 
-<h3>Author Book Confirmation</h3>
+<h3 align="center">Author Book Confirmation</h3>
+<br>
+<h3 align="center">
+    The book title is confirmed: <span th:text="${book.title}" />
+    <br>
+    The book author is confirmed: <span th:text="${book.author}" />
+    <br>
+    The book pages are confirmed: <span th:text="${book.pageAmount}" />
+</h3>
 
-The book title is confirmed: <span th:text="${book.title}" />
-<br>
-The book author is confirmed: <span th:text="${book.author}" />
-<br>
-The book pages are confirmed: <span th:text="${book.pageAmount}" />
 </body>
 </html>

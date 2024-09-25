@@ -6,23 +6,27 @@
 </head>
 <body>
 
-<h3>Book Registration Form</h3>
+<h3 align="center">Book Registration Form</h3>
 
 <form th:action="@{/processBookForm}" th:object="${book}" method="POST">
 
-    Author name: <input type="text" th:field="*{author}" />
 
-    <br><br>
+    <h4 align="center">
+        Author name: <input type="text" th:field="*{author}" />
 
-    Title name: <input type="text" th:field="*{title}" />
+        <br><br>
 
-    <br><br>
+        Title name: <input type="text" th:field="*{title}" />
 
-    Page amount: <input type="text" th:field="*{pageAmount}" />
+        <br><br>
 
-    <br><br>
+        Page amount: <input type="text" th:field="*{pageAmount}" />
 
-    <input type="submit" value="Submit" />
+        <br><br>
+
+        <input type="submit" value="Submit" />
+    </h4>
+
 
 </form>
 
