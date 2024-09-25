@@ -2,19 +2,23 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Student Registration Form</title>
+    <title>Book Registration Form</title>
 </head>
 <body>
 
-<h3>Student Registration Form</h3>
+<h3>Book Registration Form</h3>
 
-<form th:action="@{/processStudentForm}" th:object="${student}" method="POST">
+<form th:action="@{/processBookForm}" th:object="${book}" method="POST">
 
-    First name: <input type="text" th:field="*{firstName}" />
+    Author name: <input type="text" th:field="*{author}" />
 
     <br><br>
 
-    Last name: <input type="text" th:field="*{lastName}" />
+    Title name: <input type="text" th:field="*{title}" />
+
+    <br><br>
+
+    Page amount: <input type="text" th:field="*{pageAmount}" />
 
     <br><br>
 
